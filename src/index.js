@@ -1,8 +1,14 @@
 import 'Styles/main.scss';
 import Vue from 'vue';
-import HelloWorld from 'Components/HelloWorld.vue';
+import App from './App.vue';
+import router from './router';
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: createElement => createElement(HelloWorld),
-  el: '#app'
-});
+  router,
+  render: h => h(App),
+}).$mount('#app');
