@@ -32,6 +32,11 @@
 </template>
 
 <script>
+/*
+  TODO max.cloutier Would make a popup component instead of using this one and having buttons and lot of conditions in the template
+  and use slot to pass the textarea to the popup component
+*/
+
 export default {
   name: 'AdditionalNotes',
   computed: {
@@ -53,6 +58,7 @@ export default {
     },
     focusNotesEvent() {
       this.hideNotesPopup = false;
+      // TODO max.cloutier If I had more time I'd look into focusing the input in the popup after opening
     }
   }
 };

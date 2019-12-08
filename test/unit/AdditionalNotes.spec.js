@@ -14,6 +14,8 @@ beforeEach(() => {
   });
 });
 
+// TODO max.cloutier implement better test cases, cover the whole component and make sure it's regression proof
+
 test('.label should exist', () => {
   expect(wrapper.find('.label').exists()).toBe(true);
 });
