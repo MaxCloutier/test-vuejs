@@ -8,7 +8,7 @@
 </template>
 
 <script>
-const logoLink = require('../../images/logo-pink.png')
+const logoLink = require('../../images/logo-pink.png');
 
 export default {
   name: 'Header',
@@ -17,7 +17,7 @@ export default {
   }),
   props: {
   }
-}
+};
 </script>
 
 <style scoped>

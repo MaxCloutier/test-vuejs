@@ -1,7 +1,10 @@
+import Vue from 'vue';
+import CompanyData from '../components/CompanyData.vue';
+import CompanyTable from '../components/CompanyTable.vue';
+import CompanyPage from '../components/CompanyPage.vue';
 import VueRouter from 'vue-router';
-import CompanyData from '../components/CompanyData.vue'
-import CompanyTable from '../components/CompanyTable.vue'
-import CompanyPage from '../components/CompanyPage.vue'
+
+Vue.use(VueRouter);
 
 export default new VueRouter({
   linkExactActiveClass: 'is-active',

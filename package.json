@@ -15,10 +15,22 @@
     "test": "node_modules/.bin/jest",
     "start": "npm run dev"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".*\\.(vue)$": "vue-jest"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "portal-vue": "^2.1.6",
+    "vee-validate": "^3.1.3",
     "vue": "2.6.10",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.2"

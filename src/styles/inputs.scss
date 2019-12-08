@@ -1,0 +1,61 @@
+@import './variables';
+
+::placeholder {
+  color: $border;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $border;
+}
+
+::-ms-input-placeholder {
+  color: $border;
+}
+
+.input-wrapper {
+  display: block;
+  margin-top: 30px;
+}
+
+.label {
+  color: $inputLabelGray;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+input, textarea {
+  background: #fff;
+  border-radius: $borderRadius;
+  border: 1px solid $border;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: $textGray;
+  font-size: 15px;
+  line-height: 1.3;
+  padding: 10px 15px;
+  resize: none;
+  transition: background $transitionTime;
+  width: 50%;
+
+  &:focus {
+    outline: none;
+    background: $activeGray;
+  }
+}
+
+textarea {
+  height: 160px;
+  width: 100%;
+}
+
+.error {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #f00;
+}

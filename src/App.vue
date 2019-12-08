@@ -9,6 +9,7 @@
       </div>
     </div>
     <Footer></Footer>
+    <portal-target name="popup"></portal-target>
   </div>
 </template>
 
@@ -26,7 +27,7 @@ export default {
     Sidebar,
     Footer
   }
-}
+};
 </script>
 
 <style scoped>

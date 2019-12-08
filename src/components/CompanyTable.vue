@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'CompanyTable'
-}
+};
 </script>
 
 <style scoped>
