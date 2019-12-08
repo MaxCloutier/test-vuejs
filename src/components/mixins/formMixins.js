@@ -16,6 +16,7 @@ export default {
 
       const { min, max, size } = this.splitSpendAbility(value);
 
+      // Shouldn't be more than one dash and rest numbers
       return this.isNormalInteger(min) && this.isNormalInteger(max) && size <= 2;
     },
     splitSpendAbility(value) {
@@ -45,6 +46,7 @@ export default {
         minimumFractionDigits: 0
       });
 
+      // TODO max.cloutier find out if that's compliant with the browsers we supports and find a different solution if not.
       return formatter.format(value);
     },
     formatSpendAbility(value) {
